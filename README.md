@@ -11,12 +11,12 @@ This project explores the role of smart technologies in addressing and preventin
   
 
 ## Features
--**What is Climate Change ?**
--**Causes of Climate Changes**
--**Consequences of Climate Changes**
--**Climate Change and SDGs**
--**Reducing the Carbon Footprint**
--**How Smart Technologies Can Help to Prevent from Climate Changes**
+- **What is Climate Change ?**
+- **Causes of Climate Changes**
+- **Consequences of Climate Changes**
+- **Climate Change and SDGs**
+- **Reducing the Carbon Footprint**
+- **How Smart Technologies Can Help to Prevent from Climate Changes**
 - **Smart Grids:** Explore how smart grids optimize energy distribution and integrate renewable sources.
 - **IoT in Agriculture:** Learn about precision farming and how IoT sensors contribute to sustainable agriculture.
 - **Smart Buildings:** Understand the impact of smart building technologies on energy efficiency.
