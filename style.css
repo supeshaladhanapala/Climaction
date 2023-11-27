@@ -1,0 +1,590 @@
+/*HOME PAGE------------------------------------------------------------------------------------------------------------------------------------- */
+
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    margin-bottom:0 ;
+    
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+
+width: 100%;
+z-index: 1000;
+}
+
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+ 
+
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+   
+
+nav ul {
+    list-style: none;
+    display: flex;
+  
+}
+
+nav ul li {
+    margin-right: 30px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.dropdown {
+    
+    overflow: hidden;
+
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+
+    background-color: inherit;
+    font-family: inherit;
+ 
+    margin-right: 30px;
+  
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #4CAF50;
+    padding: 10px 10px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left:0;
+ float: left;
+ left:900px;
+  
+  }
+  
+  .dropdown-content a {
+    width:800px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+#menu{
+    display:none;
+    
+  
+}
+#navbarcontent{
+    display: none;
+   
+ 
+    
+}
+.dropdownresponsive{
+    display:none;
+
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    background-position: center;
+    height: 100%;
+    background-color: #4CAF50;
+    color: #fff;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(climate1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+    bottom:70px;
+    position:relative;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px;
+}
+
+.section h2 {
+    
+    margin-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.fa-instagram {
+ 
+    background-image:linear-gradient(to bottom right,blue,crimson,yellow,red );
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+   
+   
+    position:relative;
+   
+   }
+   .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+    bottom:-1px;
+   
+    position:relative;
+   
+   }
+   .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 30px;
+    width: 30px;
+    text-decoration: none;
+   
+   }
+   
+   .iconstotal{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       max-width: 200px;
+       margin: 10px auto;
+       grid-template-columns: auto auto auto o;
+   }
+   
+   
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.calculator-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height:400px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+   
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+ 
+
+}
+
+.calculate {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calculate:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.homepara1{
+    width:600px;
+}
+.whattopic{
+    font-size:5rem;
+}
+
+
+/*What is Climate Change----------------------------------------------------------------------------------------------------------------------- */
+.intro{
+    font-size: 1.5em;
+    font-weight: bold;
+
+    font-size: 2em;
+   
+
+}
+.imgwhat{
+    width:1000px;
+    height:400px;
+    position:relative;
+    bottom:50px;
+    left:200px;
+}
+
+/*causes of climate changes---------------------------------------------------------------------------------------------------------------------*/
+.causes-section {
+    display: grid;
+    grid-template-columns: auto auto auto;;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.causes-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 30%;
+    min-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Consequences of climate changes---------------------------------------------------------------------------------------------------------------------*/
+.consequences-section {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: auto auto auto;
+}
+
+.consequence-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 30%;
+    min-width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+/*Reducing Carbon Footstep----------------------------------------------------------------------------------------------------------------------- */
+.sector{
+    background-image: url(carbonfootprint.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+       }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+       
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+
+    .section {
+        padding: 30px;
+        overflow-x: hidden;
+        top:200px;
+        position: relative;
+    }
+
+    img{
+        width:800px;
+        overflow-x: hidden;
+    }
+    .homepara1{
+        width:500px;
+        padding:10px;
+        left:-10px;
+        position:relative;
+        top:-10px;
+        overflow-x: hidden;
+
+    }
+    .welcome{
+        font-size: 1rem;
+        overflow-x: hidden;
+    }
+    .secndline{
+        font-size:1rem;
+        overflow-x: hidden;
+    }
+    .whattopic{
+        font-size: 2rem;
+       
+    }
+    .imgwhat{
+        right:50px;
+        position:absolute;
+        width:350px;
+        padding:10px;
+        top:300px;
+        float:right;
+
+    }
+
+
+    .causes-section {
+        display: flex;
+        flex-direction: column;
+       top:100px;
+       position: relative;
+        justify-content: space-around;
+        max-width: 1500px;
+        margin: 20px auto;
+    }
+
+
+    .causes-card {
+        background-color: #fff;
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      overflow-x: hidden;
+        width: 88%;
+        min-width: 300px;
+        transition: transform 0.3s ease-in-out;
+    }
+    .consequences-section {
+        display: flex;
+        flex-direction: column;
+        top:100px;
+        position: relative;
+        justify-content: space-around;
+        max-width: 1500px;
+        margin: 20px auto;
+       
+      
+    }
+    
+    .consequence-card {
+        background-color: #fff;
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+       
+        width: 88%;
+        min-width: 300px;
+       
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    
+    .consequence-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    
+#menu{
+    display:block;
+  
+}
+.menucover{
+    height:642px;
+    width:100%;
+    overflow: hidden;
+    display:none;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+    bottom:700px;
+    position:relative;
+    
+}
+#navbarcontent{
+    display: none;
+   
+ 
+    
+}
+ul{
+    display:none;
+}
+.dropdown .dropbtn{
+    display:none;
+    position:relative;
+   
+  
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 360px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    left:0;
+ float: left;
+ left:100px;
+ overflow: auto;
+ 
+  
+  }
+  
+  .dropdown-content a {
+    width:800px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+   
+  }
+  
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  
+}
+
+nav ul li {
+    margin-right: 200px;
+    bottom:15px;
+    position:inherit;
+    right:10px;
+    padding:10px;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+  
+  
+}

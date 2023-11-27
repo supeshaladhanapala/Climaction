@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Climaction</title>
+    <style>
+        body{
+            margin-bottom: 0px;
+            padding:0px;
+            padding-bottom: 0px;
+        }
+    
+          .consequences-section {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding-bottom: 0px;
+    }
+    
+    .consequence-card {
+        background-color: #b7e9b7;
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin: 15px;
+        width: 30%;
+        min-width: 300px;
+        transition: transform 0.3s ease-in-out;
+        padding-bottom: 0px;
+    }
+    
+    .consequence-card:hover {
+        transform: scale(1.05);
+        padding-bottom: 0px;
+    }
+    footer{
+        overflow: hidden;
+    }
+    .footprintimg{
+        width:1450px;
+        height:700px;
+        padding:30px;
+         box-shadow: 10 54px 8px rgba(2, 0, 0, 0.1);
+
+    }
+    .fa-instagram {
+ 
+ background-image:linear-gradient(to bottom right,blue,crimson,yellow,red );
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+
+
+ position:relative;
+
+}
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+ bottom:-1px;
+
+ position:relative;
+
+}
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+
+}
+
+.iconstotal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 200px;
+    margin: 10px auto;
+    grid-template-columns: auto auto auto o;
+}
+
+#menu{
+    display:none;
+  
+}
+
+    @media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+        
+        
+       }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+      overflow:hidden;
+    }
+    .carbonfootprintimg{
+        width:600px;
+        overflow-x: hidden;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+       
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+    .consequences-section {
+        display: flex;
+        flex-direction: column;
+        top:100px;
+        position: relative;
+        justify-content: space-around;
+        max-width: 1500px;
+        margin: 20px auto;
+       
+      
+    }
+    
+    .consequence-card {
+   
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+       
+        width: 88%;
+        min-width: 300px;
+       
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    
+    .consequence-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    .total{
+        top:300px;
+        position:relative;
+}
+.intro{
+    font-size:1.5rem;
+}
+.footprintimg{
+    width:500px;
+    height:300px;
+    padding:30px; 
+    box-shadow: 10 54px 8px rgba(2, 0, 0, 0.1);
+}
+#menu{
+    display:block;
+    padding:10px;
+}
+
+    }
+
+    
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="logo">CLIMACTION</div>
+        <div class="intro">REDUCING THE CARBON FOOTPRINT</div><br>
+
+        <i class="fa fa-bars" id="menu"  aria-hidden="true" onclick="menuFunction()" ></i>
+
+        <div class="dropdownresponsive" style="text-align:justify">
+            <li><a href="What is climate change.html" style="color:white;text-decoration: none;">What is Climate Change ?</a></li>
+            <li><a href="Causes of Climate Changes.html"  style="color:white;text-decoration: none;">Causes of Climate Changes</a></li>
+            <li><a href="Consequences of Climate Changes.html"  style="color:white;text-decoration: none;">Consequences of Climate Changes</a></li>
+            <li><a href="Climate Change and SDGs.html"  style="color:white;text-decoration: none;">Climate Change and SDGs</a></li>
+            <li><a href="Reducing the Carbon Footprint.html"  style="color:white;text-decoration: none;">Reducing the Carbon Footprint</a></li>
+            <li><a href="Smart Technology.html"  style="color:white;text-decoration: none;">How Smart Technologies Can Help to Prevent from Climate Changes</a></li>
+       </div>
+
+
+       
+        <nav class="navbar">
+          
+            <ul>
+                
+                <li><a rel="noopener" href="index.html">Home</a></li>
+                <li><a rel="noopener" href="#footer" >Contact Us</a></li>
+               
+               
+                <div class="dropdown" >
+                    <button class="dropbtn" style="right:0;" >Content</button>
+                    <div class="dropdown-content" >
+                        <a href="What is climate change.html">What is Climate Change ?</a>
+                      <a href="Causes of Climate Changes.html">Causes of Climate Changes</a>
+                      <a href="Consequences of Climate Changes.html">Consequences of Climate Changes</a>
+                      <a href="Climate Change and SDGs.html">Climate Change and SDGs</a>
+                      <a href="Reducing the Carbon Footprint.html">Reducing the Carbon Footprint</a>
+                      <a href="Smart Technology.html">How Smart Technologies Can Help to Prevent from Climate Changes</a>
+                     
+                
+                     
+                    </div>
+                </div> 
+           
+            </ul>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br>
+    <div class="total" >
+    <img src="carbonfootprint.jpg" style="  opacity: 0.3;" class="carbonfootprintimg">
+
+
+    <div style="bottom:650px;position: relative;">
+    <div style="font-size:2rem;left:20px;position:relative;">
+        <h1 class="topic1" >What is Carbon Footprint?</h1></div>
+        <p style="text-align:justify;padding:30px;font-family: Lucida Bright ;"><b>A carbon footprint is a measure of the total amount of greenhouse gases, specifically carbon dioxide (CO<sub>2</sub>) and other carbon compounds,
+             that are emitted directly or indirectly by an individual, organization, event, or product throughout its lifecycle. It is expressed
+              in terms of equivalent tons of CO<Sub>2</Sub> emitted per year. The concept of a carbon footprint is used to quantify the impact of human
+               activities on the environment, particularly in terms of contributing to climate change.</b></p>
+    </div>
+
+    <div style="bottom:650px;position: relative;">
+        <div style="font-size:2rem;left:20px;position:relative;">
+            <h1 class="topic1">Key components of a carbon footprint include:</h1></div>
+            <h3 style="padding:20px;">1.Direct Emissions (Scope 1):</h3>
+            <p style="text-align:justify;padding:30px;font-family: Lucida Bright ;">These are emissions that occur directly from sources
+                 owned or controlled by the entity. Examples include emissions from on-site combustion of fossil fuels for heating or
+                  transportation.</p>
+
+            <h3 style="padding:20px;">2.Indirect Emissions from Energy Use (Scope 2):</h3>
+            <p style="text-align:justify;padding:30px;font-family: Lucida Bright ;">These are emissions from the generation of purchased energy,
+                 such as electricity. They are indirect because the entity does not own or control the emission source but is responsible for the 
+                 emissions resulting from its energy consumption.</p>
+
+            <h3 style="padding:20px;">3.Indirect Emissions from Supply Chain and Other Activities (Scope 3):</h3>
+            <p style="text-align:justify;padding:30px;font-family: Lucida Bright ;">These are emissions that occur in the supply chain and
+                 other activities related to the entity but are outside of its direct control. This includes emissions from the production of 
+                 goods, transportation, and disposal of waste.</p>
+        </div>
+
+
+        <div style="bottom:650px;position: relative;">
+           
+                <p style="text-align:justify;padding:30px;font-family: Lucida Bright ;"><b>The carbon footprint can be calculated for various
+                     entities, including individuals, businesses, events, and products. Some common methods for calculating carbon footprints
+                      involve considering energy consumption, travel habits, waste generation, and other activities that release greenhouse gases
+                       into the atmosphere.
+
+<div style="background-color: #b7e9b7;padding:40px;">Reducing a carbon footprint is a key aspect of sustainability efforts. Strategies for reducing carbon footprints include energy efficiency 
+measures, transitioning to renewable energy sources, improving transportation efficiency, and adopting sustainable practices in the supply chain.
+
+The concept of a carbon footprint is closely tied to the broader goal of mitigating climate change by reducing overall greenhouse gas emissions.
+ Many individuals and organizations are taking steps to calculate, understand, and reduce their carbon footprints as part of broader efforts to 
+ address environmental sustainability and climate action.</b></p>
+            </div></div>
+
+
+<div style="bottom:650px;position: relative;">  <img src="scope.png"  class="footprintimg"></div>
+
+<div style="bottom:650px;position: relative;">
+    <div style="font-size:2rem;left:20px;position:relative;">
+        <h1 >How to Reduce The Carbon Footprint</h1></div>
+           <section class="consequences-section">
+            <article class="consequence-card">
+                <h2>1. Energy Efficiency:</h2><br>
+                <p style="text-align: justify;"><li>Use energy-efficient appliances and lighting.</li>
+                    <li>Upgrade insulation and windows to improve home energy efficiency.</li>
+                    <li>Consider installing a programmable thermostat.</li></p>
+            </article>
+    
+            <article class="consequence-card">
+                <h2>2. Renewable Energy Sources:</h2><br>
+                <p style="text-align: justify;"><ul style="list-style-type:disc"></ul>
+                    <li>Invest in renewable energy options, such as solar panels or wind turbines.</li>
+                    <li>Choose a green energy provider that sources electricity from renewable sources.</li></ul></p>
+            </article>
+    
+            <article class="consequence-card">
+                <h2>3. Transportation:</h2><br>
+                <p style="text-align: justify;"><li>Use public transportation, carpool, or rideshare to reduce individual car emissions.</li>
+                    <li>Choose fuel-efficient or electric vehicles.</li>
+                    <li>Walk, bike, or use electric scooters for short trips.</li></p>
+            </article>
+    
+            <article class="consequence-card">
+                <h2>4. Reduce, Reuse, Recycle:</h2><br>
+                <p style="text-align: justify;">  <li>Minimize waste by opting for products with minimal packaging.</li>
+                    <li>Practice recycling for paper, plastic, glass, and other materials.</li>
+                    <li>Reuse items when possible, and support second-hand markets.</li></p>
+            </article>
+    
+            <article class="consequence-card">
+                <h2>5. Sustainable Diet:</h2><br>
+                <p style="text-align: justify;"> <li>Choose locally produced and seasonal foods to reduce the carbon footprint of transportation.</li>
+                    <li>Reduce meat consumption or choose plant-based options.</li>
+                    <li>Minimize food waste by planning meals and storing food properly.</li></p>
+            </article>
+    
+            <article class="consequence-card">
+                <h2>6. Water Conservation:</h2><br>
+                <p style="text-align: justify;"><li>Fix leaks and use water-saving appliances.</li>
+                    <li>Collect rainwater for watering plants.</li>
+                    <li>Be mindful of water usage in daily activities.</li></p>
+            </article>
+    
+            <article class="consequence-card">
+                <h2>7. Green Landscaping:</h2><br>
+                <p style="text-align: justify;"><li>Plant trees and maintain green spaces.</li>
+                    <li>Choose native plants that require less water.</li>
+                    <li>Compost organic waste instead of sending it to landfills.</li></p>
+            </article>
+    
+           <article class="consequence-card">
+                <h2>8. Sustainable Shopping:</h2><br>
+                <p style="text-align: justify;">  <li>Choose products with minimal environmental impact.</li>
+                    <li>Look for eco-friendly certifications and labels.</li>
+                    <li>Consider second-hand or refurbished items.</li></p>
+            </article>
+    
+            <article class="consequence-card">
+                <h2>9. Education and Advocacy:</h2><br>
+                <p style="text-align: justify;"> <li>Stay informed about climate change issues and solutions.</li>
+                    <li>Advocate for policies that promote sustainability at local, national, and global levels.</li></p>
+            </article>
+
+            <article class="consequence-card">
+                <h2>10. Telecommuting and Remote Work:</h2><br>
+                <p style="text-align: justify;"> <li>Encourage telecommuting to reduce commuting-related emissions.
+                    <li></li>Implement flexible work schedules to reduce transportation needs.</li></p>
+            </article>
+
+            <article class="consequence-card">
+                <h2>11. Carbon Offsetting:</h2><br>
+                <p style="text-align: justify;"> <li>Consider investing in carbon offset programs that support projects aimed at
+                    reducing or capturing greenhouse gas emissions.</li></p>
+            </article>
+
+            <article class="consequence-card">
+                <h2>12. Eco-Friendly Technology:</h2><br>
+                <p style="text-align: justify;"> <li>Choose energy-efficient electronic devices.</li>
+                    <li>Recycle old electronics responsibly.</li>
+                    <li>Support companies with sustainable technology practices.</li></p>
+            </article>
+
+            <article class="consequence-card">
+                <h2>13. Community Engagement:</h2><br>
+                <p style="text-align: justify;"> <li>Participate in local environmental initiatives and clean-up events.</li>
+                    <li>Join or support community projects focused on sustainability.</li></p>
+            </article>
+
+        
+
+            <article class="consequence-card">
+                <h2>14. Carbon Footprint Calculators:</h2><br>
+                <p style="text-align: justify;"> <li>Use online calculators to assess your carbon footprint and identify areas for improvement.</li>
+                    <li>Set goals for reducing your carbon footprint over time.</li></p>
+            </article>
+
+            <article class="consequence-card">
+                <h2>15. Green Building Practices:</h2><br>
+                <p style="text-align: justify;"> <li>Design and construct buildings with energy-efficient features.</li>
+                    <li>Use sustainable materials in construction and renovation projects.</li></p>
+            </article>
+
+            <article class="consequence-card">
+                <h2>16. Support Sustainable Policies:</h2><br>
+                <p style="text-align: justify;"> <li>Advocate for and support policies that promote renewable energy, energy efficiency,
+                     and sustainable practices at various levels of government.</li></p>
+            </article>
+        </section>
+   
+    </div>
+    <div style="bottom:650px;position: relative; padding-bottom: 0px;">
+    <section id="smart-home" class="section" style=" padding-bottom: 0px;">
+        <div class="calculator-container" style=" margin-bottom: 0;">
+               <h1>Carbon Footprint Calculator</h1><br>
+               <form id="carbonForm">
+                   <label for="electricity">Electricity Usage (kWh):</label>
+                   <input type="number" id="electricity" name="electricity" required>
+       
+                   <label for="gas">Gas Usage (therms):</label>
+                   <input type="number" id="gas" name="gas" required>
+       
+                   <label for="transport">Transportation (miles per year):</label>
+                   <input type="number" id="transport" name="transport" required>
+       
+                   <button type="button" onclick="calculateCarbon()" class="calculate" >Calculate</button>
+       
+                   <p id="result" >Your estimated carbon footprint: <span id="carbonResult">0</span> tons CO2 per year</p>
+               </form>
+           </div>
+       </section>
+    </div>
+    <footer class="footer" id="footer">
+        <div class="footertotal">
+            <div>
+        <h1>CLIMACTION</h1>
+        </div>
+    <div>
+            <h4>CONTACT US</h4>
+            <div class="iconstotal">
+    <a href="#" class="fa fa-facebook" ></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a><p></div>
+        <br>
+    </div>
+    
+    
+    </div>
+    <p>&copy; 2023 Climaction. All rights reserved.</p>
+    </footer>
+         <script src="script.js">
+
+        function menuFunction(){
+            var x = document.querySelector(".dropdownresponsive");
+            if (x.style.display == "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+        
+            
+           
+        }
+            </script>
+
+       </body>
+       </html>

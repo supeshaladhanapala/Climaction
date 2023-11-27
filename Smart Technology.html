@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Climaction</title>
+    <style>
+.total{
+    display:grid;
+    grid-template-columns: auto auto;
+    padding:30px;
+    justify-content: space-between;
+    grid-gap: 50px;
+
+}
+.fa-instagram {
+ 
+ background-image:linear-gradient(to bottom right,blue,crimson,yellow,red );
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+
+
+ position:relative;
+
+}
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+ bottom:-1px;
+
+ position:relative;
+
+}
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+
+}
+
+.iconstotal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 200px;
+    margin: 10px auto;
+    grid-template-columns: auto auto auto o;
+}
+#menu{
+    display:none;
+  
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+       }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+       
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+    .total {
+        display: flex;
+        flex-direction: column;
+       top:150px;
+        position: relative;
+        justify-content: space-around;
+        max-width: 1500px;
+        margin: 20px auto;
+       
+      
+    }
+    
+    .consequence-card {
+        background-color: #fff;
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+       
+        width: 88%;
+        min-width: 300px;
+       
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    
+    .consequence-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    .intro{
+        font-size:1.2rem
+    }
+    .para1{
+        top:150px;
+        position: relative;
+        width:100%;
+        padding:20px;
+
+    }
+    p{
+        width:500px;
+    }
+    iframe{
+        padding:20px;
+    }
+
+    .footertotal{
+   
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: auto auto auto auto auto auto auto ;
+    grid-gap: 10px;
+    flex-direction: column;
+   
+   
+}
+
+footer p{
+    font-size: 15px;
+}
+#menu{
+    display:block;
+    padding:10px;
+}
+}
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">CLIMACTION</div>
+            <div class="intro">SMART TECHNOLOGIES AND CLIMATE CHANGES</div><br>
+
+            
+        <i class="fa fa-bars" id="menu"  aria-hidden="true" onclick="menuFunction()" ></i>
+
+        <div class="dropdownresponsive" style="text-align:justify">
+            <li><a href="What is climate change.html" style="color:white;text-decoration: none;">What is Climate Change ?</a></li>
+            <li><a href="Causes of Climate Changes.html"  style="color:white;text-decoration: none;">Causes of Climate Changes</a></li>
+            <li><a href="Consequences of Climate Changes.html"  style="color:white;text-decoration: none;">Consequences of Climate Changes</a></li>
+            <li><a href="Climate Change and SDGs.html"  style="color:white;text-decoration: none;">Climate Change and SDGs</a></li>
+            <li><a href="Reducing the Carbon Footprint.html"  style="color:white;text-decoration: none;">Reducing the Carbon Footprint</a></li>
+            <li><a href="Smart Technology.html"  style="color:white;text-decoration: none;">How Smart Technologies Can Help to Prevent from Climate Changes</a></li>
+       </div>
+
+
+           
+            <nav class="navbar">
+              
+                <ul>
+                    
+                    <li><a rel="noopener" href="index.html">Home</a></li>
+                    <li><a rel="noopener" href="#footer" >Contact Us</a></li>
+                   
+                   
+                    <div class="dropdown" >
+                        <button class="dropbtn" style="right:0;" >Content</button>
+                        <div class="dropdown-content" >
+                            <a href="What is climate change.html">What is Climate Change ?</a>
+                          <a href="Causes of Climate Changes.html">Causes of Climate Changes</a>
+                          <a href="Consequences of Climate Changes.html">Consequences of Climate Changes</a>
+                          <a href="Climate Change and SDGs.html">Climate Change and SDGs</a>
+                          <a href="Reducing the Carbon Footprint.html">Reducing the Carbon Footprint</a>
+                          <a href="Smart Technology.html">How Smart Technologies Can Help to Prevent from Climate Changes</a>
+                         
+                    
+                         
+                        </div>
+                    </div> 
+               
+                </ul>
+            </nav>
+        </header>
+        <br><br><br><br>
+
+        <h3 style="background-color:#9bf5a5;" class="para1">
+            The Internet of Things (IoT) can play a crucial role in preventing climate change and mitigating its impacts by providing 
+            innovative solutions for monitoring, managing resources, and optimizing various processes. Here are several ways in which IoT can
+             contribute to climate change prevention:</h3>
+
+           
+             
+
+             <div class="total">
+                    <div>
+                        <h1 style="color:red;">Environmental Monitoring</h1><br>
+                        <h3>Air Quality Sensors: </h3>
+                        <p style="width:500px;text-align: justify;">Air Quality Monitoring: IoT sensors can measure air quality in real-time, detecting pollutants and helping authorities
+                             take immediate actions to reduce emissions.
+                            Water Quality Monitoring: Sensors in bodies of water can monitor water quality, identifying pollution sources and
+                             promoting sustainable water management practices.</p>
+                    </div>
+
+                    <div><iframe width="500" height="315" src="https://www.youtube.com/embed/W8p6YI45mFs?si=8PNL1Y4V2-ZniCO1" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <h3>Weather Stations: </h3>
+                            <p style="text-align: justify;">IoT devices can collect real-time weather data, contributing to more accurate climate
+                                 models and better understanding of climate patterns.</p>
+                        </div>
+
+                    <div>
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/-gAqMojoDHQ?si=gstxIkM5rtSuGs6q" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    
+
+                          
+
+
+                    <div>
+                        <h1 style="color:red;">Smart Agriculture</h1>
+                        <h3>Precision Farming:</h3>
+                        <p style="text-align: justify;">IoT sensors in agriculture can monitor soil conditions, crop health, and weather
+                             patterns. This data helps optimize irrigation, fertilization, and pest control, leading to increased efficiency and
+                              reduced environmental impact.</p>
+
+                    </div>
+
+                    <div>
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/WhAfZhFxHTs?si=-c2rdmkXQosVjqz9" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+
+                  
+
+
+
+
+                    <div>
+                        <h1 style="color:red;">Energy Management:</h1>
+                        <h3>Smart Grids</h3>
+                        <p style="text-align: justify;">IoT devices on power grids allow for better management of energy distribution, enabling the integration of
+                             renewable energy sources and optimizing overall energy efficiency.</p>
+
+                    </div>
+
+                    
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/THItJxXw6sA?si=lZVHMy_eIXkQgYo4" title="YouTube video 
+                    player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+                     web-share" allowfullscreen></iframe>
+
+
+                    <div>
+                        <h3>Smart Meters</h3>
+                        <p style="text-align: justify;">IoT-enabled smart meters provide detailed information on energy consumption, allowing consumers and utilities
+                             to make informed decisions to reduce energy use and carbon emissions.</p>
+                    </div>
+
+
+
+
+                    <iframe width="500" height="315" src="https://www.youtube.com/embed/7MPr6SDxFM4?si=DreOGANdHptfC2XA" title="YouTube 
+                    video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+                   
+
+
+                    <div>
+                        <h1 style="color:red;">Transportation Efficiency:</h1>
+                        <p style="text-align: justify;">IoT in transportation facilitates communication between vehicles, traffic lights, and infrastructure, reducing
+                             traffic congestion and improving fuel efficiency.</p>
+
+                    </div>
+
+                    <div> <iframe width="500" height="315" src="https://www.youtube.com/embed/OnjX0O9dPMc?si=fTo4qqa-Z6gSPvKe"
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   </div>
+
+
+                   
+
+
+
+
+
+
+
+                    <div>
+                        <h1 style="color:red;">Waste Management:</h1>
+                        <h3>Smart Bins</h3>
+                        <p style="text-align: justify;">IoT sensors on waste bins can monitor fill levels, optimizing waste collection routes
+                             and reducing fuel consumption by waste management vehicles.</p>
+
+                    </div>
+
+                    <div><iframe width="500" height="315" src="https://www.youtube.com/embed/LJYWRTRJThY?si=RrMC3mfCR3W4b701" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+
+                    
+                    
+
+                   
+
+
+                    <div>
+                        <h1 style="color:red;">Water Management:</h1>
+                        <h3>Water Quality Monitoring: </h3>
+                        <p style="text-align: justify;">IoT devices can continuously monitor water quality in rivers, lakes, and oceans, providing early detection of pollution 
+                            events.</p>
+
+                    </div>
+
+
+                    <div> <iframe width="500" height="315" src="https://www.youtube.com/embed/om8OEPhkZ8s?si=UYOfBoDF6iVe83S2" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+
+                  
+
+
+
+                    <div>
+                        <h1 style="color:red;">Building Automation</h1>
+                        <h3>Smart Home</h3>
+                        <p style="text-align: justify;">This category involves the use of various technologies, including Internet of Things
+                             (IoT) devices, to automate and control different aspects of a residential building for increased convenience, energy
+                              efficiency, and security. Here are some key features associated with a smart house:</p>
+
+                    </div>
+
+                    
+                
+
+                    
+    
+    
+                    <div>
+                        <iframe width="500" height="315" src="https://www.youtube.com/embed/IC0mkHh7MaA?si=HxZgR5_Lxw5Aae9g" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+                         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+
+                    
+                </div>
+
+               
+
+                 <br> <br> <br> <br>
+
+
+
+                   
+
+                   
+                    
+                  
+
+           
+
+
+<script>
+    
+</script>
+
+<footer class="footer" id="footer">
+    <div class="footertotal">
+        <div>
+    <h1>CLIMACTION</h1>
+    </div>
+<div>
+        <h4>CONTACT US</h4>
+        <div class="iconstotal">
+<a href="#" class="fa fa-facebook" ></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-instagram"></a><p></div>
+    <br>
+</div>
+
+
+</div>
+<p>&copy; 2023 Climaction. All rights reserved.</p>
+</footer>
+
+
+<script src="script.js">
+
+    function menuFunction(){
+        var x = document.querySelector(".dropdownresponsive");
+        if (x.style.display == "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+    
+        
+       
+    }
+        </script>
+
+            </body>
+
+        </html>

@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Climaction</title>
+    <style>
+        body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.header {
+    background-color: #3498db;
+    text-align: center;
+    padding: 20px;
+}
+
+.consequences-section {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: auto auto auto;
+}
+
+.consequence-card {
+    background-color: #fff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: 30%;
+    min-width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.consequence-card:hover {
+    transform: scale(1.05);
+}
+
+.consequence-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+h2 {
+    color: #3498db;
+    margin-top: 10px;
+}
+
+.footer {
+    background-color:  #333;;
+    text-align: center;
+    padding: 10px;
+   
+    bottom: 0;
+    width: 100%;
+}
+
+.fa-instagram {
+ 
+ background-image:linear-gradient(to bottom right,blue,crimson,yellow,red );
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+
+
+ position:relative;
+
+}
+.fa-facebook {
+ background: #3B5998;
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+ bottom:-1px;
+
+ position:relative;
+
+}
+.fa-twitter {
+ background: #55ACEE;
+ color: white;
+ border-radius: 50%;
+ padding: 5px;
+ font-size: 30px;
+ width: 30px;
+ text-decoration: none;
+
+}
+
+.iconstotal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 200px;
+    margin: 10px auto;
+    grid-template-columns: auto auto auto o;
+}
+#menu{
+    display:none;
+  
+}
+
+
+@media screen and (max-width: 600px) {
+    body{
+        overflow-x: hidden;
+       }
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+       
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        padding: 30px;
+        overflow-x: hidden;
+    }
+    .consequences-section {
+        display: flex;
+        flex-direction: column;
+        top:100px;
+        position: relative;
+        justify-content: space-around;
+        max-width: 1500px;
+        margin: 20px auto;
+       
+      
+    }
+    
+    .consequence-card {
+        background-color: #fff;
+        color: #333;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+       
+        width: 88%;
+        min-width: 300px;
+       
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    
+    .consequence-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    #menu{
+    display:block;
+}
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CLIMACTION</div>
+        <div class="intro">Consequences of Climate Change</div>
+        <i class="fa fa-bars" id="menu"  aria-hidden="true" onclick="menuFunction()" ></i>
+
+        <div class="dropdownresponsive" style="text-align:justify">
+            <li><a href="What is climate change.html" style="color:white;text-decoration: none;">What is Climate Change ?</a></li>
+            <li><a href="Causes of Climate Changes.html"  style="color:white;text-decoration: none;">Causes of Climate Changes</a></li>
+            <li><a href="Consequences of Climate Changes.html"  style="color:white;text-decoration: none;">Consequences of Climate Changes</a></li>
+            <li><a href="Climate Change and SDGs.html"  style="color:white;text-decoration: none;">Climate Change and SDGs</a></li>
+            <li><a href="Reducing the Carbon Footprint.html"  style="color:white;text-decoration: none;">Reducing the Carbon Footprint</a></li>
+            <li><a href="Smart Technology.html"  style="color:white;text-decoration: none;">How Smart Technologies Can Help to Prevent from Climate Changes</a></li>
+       </div>
+
+
+        <nav class="navbar">
+          
+            <ul>
+                
+                <li><a rel="noopener" href="index.html">Home</a></li>
+                <li><a rel="noopener" href="#footer" >Contact Us</a></li>
+               
+               
+                <div class="dropdown" >
+                    <button class="dropbtn" style="right:0;" >Content</button>
+                    <div class="dropdown-content" >
+                      <a href="What is climate change.html">What is Climate Change ?</a>
+                      <a href="Causes of Climate Changes.html">Causes of Climate Changes</a>
+                      <a href="Consequences of Climate Changes.html">Consequences of Climate Changes</a>
+                      <a href="Climate Change and SDGs.html">Climate Change and SDGs</a>
+                      <a href="Reducing the Carbon Footprint.html">Reducing the Carbon Footprint</a>
+                      <a href="Smart Technology.html">How Smart Technologies Can Help to Prevent from Climate Changes</a>
+                     
+                 
+                     
+                    </div>
+                </div> 
+           
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+<br><br><br>
+   
+
+    <section class="consequences-section">
+        <article class="consequence-card">
+            <img src="temprises.png" alt="Rising Temperatures">
+            <h2>1. Rising Temperatures</h2>
+            <p> - Heatwaves: Increased frequency and intensity of heatwaves, leading to health risks, heat-related illnesses, and stress on 
+                ecosystems.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="changesinpreciptions.jpg" alt="Changes in Precipitation Patterns">
+            <h2>2. Changes in Precipitation Patterns:</h2>
+            <p> 
+                - Droughts: Prolonged and severe droughts in some regions, affecting water availability for agriculture, industry, and communities.
+                - Floods: Increased risk of heavy rainfall and flooding in certain areas, causing damage to infrastructure and displacement of
+                 communities.</p>
+        </article>
+
+      
+
+        <article class="consequence-card">
+            <img src="sealeevlrises.jpg" alt="sea level rises">
+            <h2>3. Sea Level Rise:</h2>
+            <p> - Coastal Erosion: Rising sea levels contribute to coastal erosion, threatening infrastructure and displacing communities.
+                - Saltwater Intrusion: Infiltration of saltwater into freshwater sources, impacting agriculture and drinking water supplies.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="extreamwhetherrises.jpg" alt="Extreme Weather Events">
+            <h2> 4. Extreme Weather Events:
+                </h2>
+            <p> - Hurricanes and Cyclones: Increased frequency and intensity of tropical storms, hurricanes, and cyclones, posing risks to coastal
+                areas.
+               - Wildfires: More frequent and severe wildfires due to higher temperatures and changes in precipitation patterns.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="Melting Ice and Glaciers.jpg" alt="Melting Ice and Glaciers">
+            <h2>   5. Melting Ice and Glaciers:
+                </h2>
+            <p>- Arctic and Antarctic Ice Loss: Melting ice contributes to rising sea levels and affects ecosystems and wildlife in polar regions.
+                - Glacier Retreat: Reduction in the size and volume of glaciers, impacting water resources for downstream communities.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="Ocean Acidification.png" alt="Ocean Acidification">
+            <h2>6. Ocean Acidification:
+                
+             </h2>
+            <p> - Increased absorption of CO2 by the oceans leads to ocean acidification, affecting marine life with calcium carbonate shells and 
+                skeletons, such as corals and certain shellfish.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="Ecosystem Disruptions.jpg" alt="Ecosystem Disruptions">
+            <h2> 7. Ecosystem Disruptions:
+               </h2>
+            <p>  - Shifts in Habitats: Changes in temperature and precipitation patterns can alter the distribution of plant and animal species, 
+                affecting biodiversity.
+                - Species Extinction: Increased risk of extinction for some species that are unable to adapt to changing conditions.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="Impacts on Agriculture.jpg" alt="Impacts on Agriculture">
+            <h2> 8. Impacts on Agriculture:
+                </h2>
+            <p> - Crop Failures: Changes in temperature, precipitation, and the frequency of extreme weather events can lead to crop failures and 
+                reduced yields.
+                - Shifts in Growing Seasons: Changes in growing seasons and the suitability of certain regions for agriculture.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="healthrisks.jpg" alt="Health Risks">
+            <h2>    9. Health Risks:
+               </h2>
+            <p>  - Vector-Borne Diseases: Changes in climate patterns can affect the distribution of disease-carrying vectors (such as mosquitoes 
+                and ticks), impacting the spread of diseases like malaria and Lyme disease.
+                - Heat-Related Illnesses: Increased risk of heat-related illnesses and mortality during heatwaves.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="Social and Economic Disruptions.png" alt="Social and Economic Disruptions">
+            <h2>  10. Social and Economic Disruptions:
+                </h2>
+            <p> - Displacement and Migration: Climate-induced disasters can lead to population displacement and migration.
+                - Economic Losses: Damages to infrastructure, agriculture, and industries can result in economic losses and increased social 
+                vulnerability.</p>
+        </article>
+
+        <article class="consequence-card">
+            <img src="Threats to Food Security.jpg" alt="Threats to Food Security">
+            <h2>11. Threats to Food Security:
+                </h2>
+            <p> - Changes in climate can disrupt food production, distribution, and access, posing risks to global food security.</p>
+        </article>
+
+
+        <article class="consequence-card">
+            <img src="biodiversityloss.jpg" alt="Biodiversity Loss">
+            <h2>12. Biodiversity Loss:
+                </h2>
+            <p> -Climate change poses a significant threat to global biodiversity. Alterations in temperature, precipitation patterns, and 
+                ecosystems disrupt the habitats of many plant and animal species. As a result, some species may struggle to adapt and face an
+                 increased risk of extinction. 
+
+               </p>
+        </article>
+
+
+       
+
+
+
+       
+    </section><br> <br><br> <br><br> <br>
+
+    <footer class="footer" id="footer">
+        <div class="footertotal">
+            <div>
+        <h1>CLIMACTION</h1>
+        </div>
+    <div>
+            <h4>CONTACT US</h4>
+            <div class="iconstotal">
+    <a href="#" class="fa fa-facebook" ></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-instagram"></a><p></div>
+        <br>
+    </div>
+    
+    
+    </div>
+    <p>&copy; 2023 Climaction. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js">
+
+        function menuFunction(){
+            var x = document.querySelector(".dropdownresponsive");
+            if (x.style.display == "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+        
+            
+           
+        }
+            </script>
+</body>
+</html>
+
